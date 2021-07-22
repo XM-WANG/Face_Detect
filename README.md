@@ -27,6 +27,7 @@ Notes: Python 3.6 is recommended.
 
 The weights of the well-trained age and gender detect models can be accessed via the link provided in the last section. Please downloads all of the four files and put them in the `model/` folder. For quick deployment:
 ```
+cd ~/your project directory
 bash download.sh
 ```
 
