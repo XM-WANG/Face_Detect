@@ -21,6 +21,7 @@ The dependencies are listed in `requirements.txt`. For quick deployment:
 ```
 python -m pip install -r requirements.txt
 ```
+Notes: Python 3.6 is recommended.
 
 ### 2. Models
 
