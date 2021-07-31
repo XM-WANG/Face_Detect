@@ -1,9 +1,15 @@
 import cv2
 import numpy as np
 from mtcnn import MTCNN
+import os
 
-age_model = cv2.dnn.readNetFromCaffe("model/age.prototxt", "model/dex_chalearn_iccv2015.caffemodel")
-gender_model = cv2.dnn.readNetFromCaffe("model/gender.prototxt", "model/gender.caffemodel")
+age_net_path = os.path.join("model","age.prototxt")
+age_weight_path = os.path.join("model","dex_chalearn_iccv2015.caffemodel")
+gender_net_path = os.path.join("model","gender.prototxt")
+gender_weight_path = os.path.join("model","gender.caffemodel")
+
+age_model = cv2.dnn.readNetFromCaffe(age_net_path, age_weight_path)
+gender_model = cv2.dnn.readNetFromCaffe(gender_net_path, gender_weight_path)
 detector = MTCNN()
 
 
